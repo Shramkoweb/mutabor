@@ -15,18 +15,19 @@ body {
   font-size: 12px;
   line-height: 1;
   font-family: "Futura", "Arial", sans-serif;
-  color: #adadad;
+  color: $main-color;
+  text-transform: uppercase;
 
   background-color: #333333;
 }
 
 a {
-  color: #adadad;
+  color: $main-color;
   text-decoration: none;
 
   &:hover,
   &:active {
-    color: #ffffff;
+    color: lighten($main-color, 45%);
   }
 }
 
