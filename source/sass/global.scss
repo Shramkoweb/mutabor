@@ -1,8 +1,35 @@
-a {
-  text-decoration: none;
-  color: inherit;
+html {
+  box-sizing: border-box;
 }
 
-.ie11button {
-  position: relative;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1;
+  font-family: "Futura", "Arial", sans-serif;
+  color: #adadad;
+}
+
+a {
+  color: #adadad;
+  text-decoration: none;
+
+  &:hover,
+  &:active {
+    color: #ffffff;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
