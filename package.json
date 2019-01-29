@@ -31,6 +31,7 @@
     "gulp-webp": "^3.0.0",
     "posthtml-include": "^1.2.0",
     "stylelint": "9.6.x",
+    "gh-pages": "^2.0.1",
     "stylelint-config-htmlacademy": "0.1.x"
   },
   "scripts": {
