@@ -1,7 +1,13 @@
 @import "../../node_modules/node-normalize-scss/_normalize.scss",
+  "variables",
   "global",
   "fonts",
   "mixins",
-  "variables",
   "./blocks/visually-hidden";
 @import "blocks/container.scss";
+@import "blocks/page-header.scss";
+@import "blocks/site-navigation.scss";
+@import "blocks/toggle.scss";
+@import "blocks/logo.scss";
+@import "blocks/navigation-modal.scss";
+@import "blocks/works.scss";
