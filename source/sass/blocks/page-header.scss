@@ -1,0 +1,27 @@
+.page-header {
+  position: fixed;
+  top: 0;
+  z-index: 11;
+
+  width: 100%;
+
+  background: #333333;
+
+  &::after {
+    content: "";
+    position: relative;
+
+    display: block;
+    width: 100%;
+    height: 3px;
+
+    border-bottom: 3px solid #cacaca;
+  }
+}
+
+.page-header__inner {
+  position: relative;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
