@@ -1,6 +1,8 @@
 var navMain = document.querySelector(".site-navigation");
 var navToggle = document.querySelector(".toggle");
 var overlay = document.querySelector(".overlay");
+var link = document.querySelectorAll(".works__item");
+var workModal = document.querySelectorAll(".works__modal");
 
 
 //Открытие меню в мобильно версии.
@@ -14,8 +16,10 @@ navToggle.addEventListener("click", function () {
   overlay.classList.toggle("overlay--open");
 })
 
-var workModal = document.querySelectorAll(".works__modal"),
-  link = document.querySelectorAll(".works__item");
+
+// modal
+
+link = document.querySelectorAll(".works__item");
 if (0 < link.length)
   for (var i = 0; i < link.length; i++)
     link[i].addEventListener("click", function () {
