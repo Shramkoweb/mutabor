@@ -14,16 +14,10 @@ navToggle.addEventListener("click", function () {
   overlay.classList.toggle("overlay--open");
 })
 
-
-// modal
-var workModal = document.querySelector(".works__modal");
-var link = document.querySelectorAll(".works__item");
-
-if (link.length > 0) {
-  for (var i = 0; i < link.length; i++) {
+var workModal = document.querySelectorAll(".works__modal"),
+  link = document.querySelectorAll(".works__item");
+if (0 < link.length)
+  for (var i = 0; i < link.length; i++)
     link[i].addEventListener("click", function () {
-      workModal.classList.toggle("works__modal--open");
-    })
-  };
-
-};
+      this.querySelector(".works__modal").classList.toggle("works__modal--open");
+    });
