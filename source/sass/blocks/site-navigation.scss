@@ -72,3 +72,11 @@
     color: lighten($main-color, 45%);
   }
 }
+
+.site-navigation__modal--open {
+  position: absolute;
+
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}

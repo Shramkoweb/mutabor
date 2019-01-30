@@ -1,3 +1,25 @@
 .navigation-modal {
   display: none;
+
+  &--open {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    padding: 0 35px;
+
+    color: #ffffff;
+    letter-spacing: 0.3px;
+    line-height: 1.5 ;
+
+    background-color: #333333;
+  }
 }
