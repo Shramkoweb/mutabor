@@ -25,7 +25,7 @@
     background-color: #c4c4c4;
     transform: translateX(-50%);
   }
-  
+
   @media (min-width: $bp-tablet) {
     flex-wrap: wrap;
     max-width: 60%;
@@ -54,6 +54,7 @@
 .site-navigation__item,
 .site-navigation__facilities-item {
   padding: 10px 0;
+
   @media (min-width: $bp-tablet) {
     margin-right: 17px;
   }
