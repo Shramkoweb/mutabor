@@ -1,0 +1,37 @@
+.project {
+  min-height: 100vh;
+  padding-top: 80px;
+}
+
+.project__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.project__inner {
+  margin: 0 auto;
+}
+
+.project__title {
+  margin: 0;
+
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.project__slider {
+  margin-bottom: 10px;
+}
+
+
+.project__info {
+  margin: 0;
+
+  line-height: normal;
+  letter-spacing: 0.9px;
+}
+
+.project__img {
+  width: 100%;
+}
