@@ -23,6 +23,10 @@ $transitionEasing: ease-in-out;
 
   transition: all $transitionSpeed $transitionEasing;
 
+  @media (min-width: $bp-tablet) {
+    display: none;
+  }
+
   &:before,
   &:after {
     content: "";
