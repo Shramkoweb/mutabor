@@ -24,6 +24,10 @@
   }
 }
 
+.navigation-modal__text {
+  line-height: normal;
+}
+
 .navigation-modal__footer {
   display: flex;
   justify-content: space-between;
@@ -42,4 +46,9 @@
 
   background: none;
   border: none;
+  cursor: pointer;
+
+  &:hover {
+    color: lighten($main-color, 45%);
+  }
 }
