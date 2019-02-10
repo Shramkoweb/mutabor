@@ -2,6 +2,10 @@
   position: relative;
 
   padding-top: 80px;
+
+  @media (min-width: $bp-tablet) {
+    padding-top: 0;
+  }
 }
 
 .works__list {
