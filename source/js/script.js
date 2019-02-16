@@ -35,3 +35,16 @@ if (0 < linkModal.length) {
       this.querySelector(".navigation-modal").classList.toggle("navigation-modal--open");
     })
 };
+
+var grid = document.querySelector('.grid');
+var msnry;
+
+imagesLoaded(grid, function () {
+  msnry = new Masonry(grid, {
+    itemSelector: '.grid-item',
+    columnWidth: '.grid-sizer',
+    gutter: '.gutter-sizer',
+    percentPosition: true,
+    transitionDuration: '0.25s',
+  });
+});

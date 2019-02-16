@@ -1,6 +1,7 @@
 .works {
   position: relative;
 
+  min-height: 90vh;
   padding-top: 80px;
 
   @media (min-width: $bp-tablet) {
@@ -8,21 +9,49 @@
   }
 }
 
-.works__list {
-  @include list-reset;
-}
-
 .works__item {
-  position: relative;
-
   margin-bottom: 10px;
 
   cursor: pointer;
 
-  -webkit-tap-highlight-color: transparent;
+  @media (min-width: $bp-tablet) {
+    &:hover {
+      .works__title {
+        display: block;
+      }
+    }
+  }
 
-  & img {
-    width: 100%;
+  @media screen and (min-width: $bp-1280) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: $bp-1920) {
+    margin-bottom: 30px;
+  }
+}
+
+.works__image {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+
+.works__title {
+  position: relative;
+
+  display: none;
+  margin: 0;
+
+  font-size: 9px;
+  color: #adadad;
+
+  @media screen and (min-width: $bp-1280) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: $bp-1920) {
+    font-size: 18px;
   }
 }
 
@@ -69,13 +98,6 @@
   }
 }
 
-
-.works__title {
-  font-weight: 400;
-  font-size: 12px;
-}
-
-
 @keyframes scale-in-ver-center {
   0% {
     transform: scaleY(0);
@@ -83,5 +105,36 @@
 
   100% {
     transform: scaleY(1);
+  }
+}
+
+.grid {
+  margin: 0 auto;
+}
+
+.grid-item {
+  float: left;
+  width: 100%;
+}
+
+.grid-sizer {
+  width: 100%;
+}
+
+@media screen and (min-width: $bp-tablet) {
+  .grid-sizer,
+  .grid-item {
+    width: 32%;
+  }
+
+  .grid::after {
+    content: "";
+
+    display: block;
+    clear: both;
+  }
+
+  .gutter-sizer {
+    width: 2%;
   }
 }
