@@ -58,7 +58,7 @@ $slick-opacity-not-active: 0.25 !default;
   position: absolute;
   top: 50%;
 
-  display: block;
+  display: none !important;
   width: 20px;
   height: 20px;
   padding: 0;
@@ -98,6 +98,10 @@ $slick-opacity-not-active: 0.25 !default;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  }
+
+  @media screen and (min-width: $bp-tablet) {
+    display: block !important;
   }
 }
 

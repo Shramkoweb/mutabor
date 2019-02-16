@@ -137,6 +137,9 @@
 
 
 .your-class {
-  max-width: 70%;
-  margin: 0 auto;
+  @media screen and (min-width: $bp-tablet) {
+    max-width: 80%;
+    margin: 0 auto;
+    margin-bottom: 25px;
+  }
 }
