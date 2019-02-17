@@ -115,7 +115,7 @@
 
           <div class="project__inner">
             <div class="your-class">
-              <div><img class="project__img" src="img/work-1.png" alt="123"></div>
+              <div><img class="project__img project__img--first" src="img/work-1.png" alt="123"></div>
               <div><img class="project__img" src="img/work-2.png" alt="123"></div>
               <div><img class="project__img" src="img/work-3.png" alt="123"></div>
             </div>
@@ -130,18 +130,19 @@
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="js/script.js"></script>
     <script>
       $(document).ready(function () {
         $('.your-class').slick({
           speed: 250,
-          fade: true,
           cssEase: 'linear',
           infinite: false,
           adaptiveHeight: true,
+          mobileFirst: true,
+          touchThreshold: 10
         });
       });
     </script>
+    <script src="js/script.js"></script>
   </body>
 
 </html>

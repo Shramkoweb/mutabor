@@ -75,6 +75,9 @@
   }
   img {
     display: block;
+    margin-bottom: 10px;
+
+    opacity: 1;
   }
   &.slick-loading img {
     display: none;
@@ -99,6 +102,7 @@
     border: 1px solid transparent;
   }
 }
+
 .slick-arrow.slick-hidden {
   display: none;
 }
