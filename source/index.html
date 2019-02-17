@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preload" href="fonts/futura.woff2" as="font" crossorigin="anonymous">
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js" defer></script>
     <title>Mutabor</title>
   </head>
 
@@ -69,25 +70,27 @@
                 </li>
               </ul>
 
-              <ul class="site-navigation__facilities-list">
-                <li class="site-navigation__facilities-item">
-                  <button type="button" class="site-navigation__facilities-button site-navigation__facilities-button--active">
-                    All tbd
-                  </button>
-                </li>
+              <div id="filters">
+                <ul class="site-navigation__facilities-list button-group js-radio-button-group" data-filter-group="color">
+                  <li class="site-navigation__facilities-item">
+                    <button type="button" class="site-navigation__facilities-button site-navigation__facilities-button--active button is-checked" data-filter="">
+                      All tbd
+                    </button>
+                  </li>
 
-                <li class="site-navigation__facilities-item">
-                  <button type="button" class="site-navigation__facilities-button">Miniatures</button>
-                </li>
+                  <li class="site-navigation__facilities-item">
+                    <button type="button" class="site-navigation__facilities-button button is-checked" data-filter=".miniatures">Miniatures</button>
+                  </li>
 
-                <li class="site-navigation__facilities-item">
-                  <button type="button" class="site-navigation__facilities-button">Prosthetic Makeup</button>
-                </li>
+                  <li class="site-navigation__facilities-item">
+                    <button type="button" class="site-navigation__facilities-button button" data-filter=".prosthetic">Prosthetic Makeup</button>
+                  </li>
 
-                <li class="site-navigation__facilities-item">
-                  <button type="button" class="site-navigation__facilities-button">Special props and models</button>
-                </li>
-              </ul>
+                  <li class="site-navigation__facilities-item">
+                    <button type="button" class="site-navigation__facilities-button button" data-filter=".special">Special props and models</button>
+                  </li>
+                </ul>
+              </div>
             </div>
           </nav>
 
@@ -114,7 +117,7 @@
 
             <div class="gutter-sizer"></div>
 
-            <div class="works__item grid-item">
+            <div class="works__item grid-item miniatures">
               <a class="works__link" href="project.html">
                 <img class="works__image" src="img/work-3.png" alt="123">
 
@@ -122,7 +125,7 @@
               </a>
             </div>
 
-            <div class="works__item grid-item">
+            <div class="works__item grid-item miniatures">
               <a class="works__link" href="project.html">
                 <img class="works__image" src="img/work-5.png" alt="123">
 
@@ -130,7 +133,7 @@
               </a>
             </div>
 
-            <div class="works__item grid-item">
+            <div class="works__item grid-item miniatures">
               <a class="works__link" href="project.html">
                 <img class="works__image" src="img/work-1.png" alt="123">
 
@@ -138,7 +141,7 @@
               </a>
             </div>
 
-            <div class="works__item grid-item">
+            <div class="works__item grid-item prosthetic">
               <a class="works__link" href="project.html">
                 <img class="works__image" src="img/work-2.png" alt="123">
 
@@ -146,7 +149,7 @@
               </a>
             </div>
 
-            <div class="works__item grid-item">
+            <div class="works__item grid-item prosthetic">
               <a class="works__link" href="project.html">
                 <img class="works__image" src="img/work-6.png" alt="123">
 
@@ -154,7 +157,7 @@
               </a>
             </div>
 
-            <div class="works__item grid-item">
+            <div class="works__item grid-item prosthetic">
               <a class="works__link" href="project.html">
                 <img class="works__image" src="img/work-4.png" alt="123">
 
@@ -162,7 +165,7 @@
               </a>
             </div>
 
-            <div class="works__item grid-item">
+            <div class="works__item grid-item special">
               <a class="works__link" href="project.html">
                 <img class="works__image" src="img/work-6.png" alt="123">
 
@@ -170,7 +173,7 @@
               </a>
             </div>
 
-            <div class="works__item grid-item">
+            <div class="works__item grid-item special">
               <a class="works__link" href="project.html">
                 <img class="works__image" src="img/work-2.png" alt="123">
 
@@ -178,7 +181,7 @@
               </a>
             </div>
 
-            <div class="works__item grid-item">
+            <div class="works__item grid-item special">
               <a class="works__link" href="project.html">
                 <img class="works__image" src="img/work-4.png" alt="123">
 
