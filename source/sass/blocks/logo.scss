@@ -13,13 +13,15 @@
     top: initial;
     right: initial;
 
-    flex-direction: row;
     justify-content: center;
   }
 }
 
 
 .logo {
+  width: 160px;
+  height: 37px;
+
   @media (min-width: $bp-tablet) {
     width: 149px;
     height: 34px;
