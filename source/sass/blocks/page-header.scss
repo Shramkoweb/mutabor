@@ -26,4 +26,26 @@
     flex-direction: column-reverse;
     padding-top: 20px;
   }
+
+  @media (min-width: $bp-1280) {
+    padding-top: 40px;
+  }
+
+  @media (min-width: $bp-1366) {
+    padding-top: 45px;
+  }
+
+  @media (min-width: $bp-1440) {
+    padding-top: 50px;
+  }
+
+  @media (min-width: $bp-1920) {
+    padding-top: 70px;
+  }
+}
+
+.page--project {
+  .site-navigation__facilities-list {
+    display: none;
+  }
 }

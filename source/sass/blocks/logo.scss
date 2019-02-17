@@ -24,4 +24,24 @@
     width: 149px;
     height: 34px;
   }
+
+  @media (min-width: $bp-1280) {
+    width: 248px;
+    height: 58px;
+  }
+
+  @media (min-width: $bp-1366) {
+    width: 266px;
+    height: 62px;
+  }
+
+  @media (min-width: $bp-1440) {
+    width: 276px;
+    height: 64px;
+  }
+
+  @media (min-width: $bp-1920) {
+    width: 368px;
+    height: 85px;
+  }
 }
