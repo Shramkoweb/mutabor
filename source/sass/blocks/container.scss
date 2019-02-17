@@ -4,4 +4,20 @@
   @media (min-width: $bp-tablet) {
     padding: 0 130px;
   }
+
+  @media (min-width: $bp-1280) {
+    padding: 0 215px;
+  }
+
+  @media (min-width: $bp-1366) {
+    padding: 0 225px;
+  }
+
+  @media (min-width: $bp-1440) {
+    padding: 0 242px;
+  }
+
+  @media (min-width: $bp-1440) {
+    padding: 0 322px;
+  }
 }
