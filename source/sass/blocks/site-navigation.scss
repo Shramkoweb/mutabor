@@ -93,6 +93,22 @@
   @media (min-width: $bp-tablet) {
     margin-right: 17px;
   }
+
+  @media (min-width: $bp-1280) {
+    margin-right: 22px;
+  }
+
+  @media (min-width: $bp-1366) {
+    margin-right: 25px;
+  }
+
+  @media (min-width: $bp-1440) {
+    margin-right: 27px;
+  }
+
+  @media (min-width: $bp-1920) {
+    margin-right: 35px;
+  }
 }
 
 
