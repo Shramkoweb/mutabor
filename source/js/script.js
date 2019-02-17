@@ -10,43 +10,52 @@ var filterFns = {
   }
 };
 
+// external js: isotope.pkgd.js, imagesloaded.pkgd.js
+
+var grid = document.querySelector('.grid');
+var iso;
+
+imagesLoaded(grid, function () {
+  // init Isotope after all images have loaded
+  iso = new Isotope('.grid', {
+    itemSelector: '.grid-item',
+    percentPosition: true,
+    masonry: {
+      columnWidth: '.grid-sizer',
+      gutter: '.gutter-sizer',
+      horizontalOrder: true
+    },
+
+    filter: function (itemElem) {
+
+      var isMatched = true;
+
+      for (var prop in filters) {
+        var filter = filters[prop];
+        // use function if it matches
+        filter = filterFns[filter] || filter;
+        // test each filter
+        var filterType = typeof filter;
+        if (filter && filterType == 'function') {
+          isMatched = filter(itemElem);
+        } else if (filter) {
+          isMatched = matchesSelector(itemElem, filter);
+        }
+        // break if not matched
+        if (!isMatched) {
+          break;
+        }
+      }
+      return isMatched;
+    }
+
+  })
+});
+
 // store filter for each group
 var filters = {};
 
 // init Isotope
-var iso = new Isotope('.grid', {
-  itemSelector: '.grid-item',
-  percentPosition: true,
-  masonry: {
-    columnWidth: '.grid-sizer',
-    gutter: '.gutter-sizer',
-    horizontalOrder: true
-  },
-
-  filter: function (itemElem) {
-
-    var isMatched = true;
-
-    for (var prop in filters) {
-      var filter = filters[prop];
-      // use function if it matches
-      filter = filterFns[filter] || filter;
-      // test each filter
-      var filterType = typeof filter;
-      if (filter && filterType == 'function') {
-        isMatched = filter(itemElem);
-      } else if (filter) {
-        isMatched = matchesSelector(itemElem, filter);
-      }
-      // break if not matched
-      if (!isMatched) {
-        break;
-      }
-    }
-    return isMatched;
-  }
-
-})
 
 document.querySelector('#filters').addEventListener('click', function (event) {
   // only work with buttons
