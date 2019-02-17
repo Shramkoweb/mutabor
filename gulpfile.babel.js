@@ -93,8 +93,6 @@ gulp.task('html', () => gulp.src('source/*.html')
 
 gulp.task('js', () => gulp.src('source/js/**/*.js')
   .pipe(concat('script.js'))
-  .pipe(babel({ presets: ['es2015'] }))
-  .pipe(jsmin())
   .pipe(gulp.dest('build/js')));
 
 gulp.task('start', gulp.series('clean', 'copy', 'css', 'sprite', 'html', 'js', 'server'));
