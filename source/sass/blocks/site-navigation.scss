@@ -44,6 +44,30 @@
       transform: none;
     }
   }
+
+  @media (min-width: $bp-1280) {
+    &::after {
+      left: -215px;
+    }
+  }
+
+  @media (min-width: $bp-1366) {
+    &::after {
+      left: -225px;
+    }
+  }
+
+  @media (min-width: $bp-1440) {
+    &::after {
+      left: -242px;
+    }
+  }
+
+  @media (min-width: $bp-1920) {
+    &::after {
+      left: -322px;
+    }
+  }
 }
 
 .site-navigation__list,
