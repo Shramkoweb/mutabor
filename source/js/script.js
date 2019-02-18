@@ -88,4 +88,3 @@ function radioButtonGroup(buttonGroup) {
     event.target.classList.add('is-checked');
   });
 }
-
