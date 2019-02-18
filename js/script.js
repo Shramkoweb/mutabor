@@ -14,7 +14,7 @@ navToggle.addEventListener("click", function () {
   navToggle.classList.toggle("is-active");
   navMain.classList.toggle("site-navigation--closed");
   overlay.classList.toggle("overlay--open");
-})
+});
 
 // modal menu
 
@@ -115,4 +115,3 @@ function radioButtonGroup(buttonGroup) {
     event.target.classList.add('is-checked');
   });
 }
-
