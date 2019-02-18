@@ -15,6 +15,18 @@
   }
 }
 
+.page--project {
+  @media (max-width: $bp-tablet - 1) {
+    .site-navigation__list {
+      position: relative;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+}
+
 .page-header__inner {
   position: relative;
 
