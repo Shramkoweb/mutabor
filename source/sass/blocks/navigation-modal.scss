@@ -23,8 +23,27 @@
     background-color: #333333;
 
     @media (min-width: $bp-tablet) {
-      padding: 0 130px;
+      top: 20%;
+
       justify-content: space-around;
+      max-height: 50%;
+      padding: 0 130px;
+
+      border-top: 3px solid #ededed;
+      border-bottom: 3px solid #ededed;
+
+      & + .navigation-modal_fade {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1;
+
+        width: 100%;
+        height: 100%;
+
+        background-color: rgba(0, 0, 0, 0.6);
+      }
     }
 
     @media (min-width: $bp-1280) {
@@ -32,10 +51,12 @@
     }
 
     @media (min-width: $bp-1366) {
+      max-height: 60%;
       padding: 0 225px;
     }
 
     @media (min-width: $bp-1440) {
+      max-height: 70%;
       padding: 0 242px;
     }
 
@@ -47,6 +68,10 @@
 
 .navigation-modal__text {
   line-height: normal;
+
+  @media (min-width: $bp-tablet) {
+    margin-top: 10%;
+  }
 }
 
 .navigation-modal__footer {
@@ -54,6 +79,10 @@
   justify-content: space-between;
 
   color: #adadad;
+
+  @media (min-width: $bp-tablet) {
+    margin-top: auto;
+  }
 }
 
 

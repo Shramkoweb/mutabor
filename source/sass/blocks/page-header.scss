@@ -15,6 +15,22 @@
   }
 }
 
+.page--project {
+  .site-navigation__facilities-list {
+    display: none;
+  }
+
+  @media (max-width: $bp-tablet - 1) {
+    .site-navigation__list {
+      position: relative;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+}
+
 .page-header__inner {
   position: relative;
 
@@ -41,11 +57,5 @@
 
   @media (min-width: $bp-1920) {
     padding-top: 70px;
-  }
-}
-
-.page--project {
-  .site-navigation__facilities-list {
-    display: none;
   }
 }
