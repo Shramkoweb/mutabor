@@ -76,7 +76,7 @@
 
 .navigation-modal__footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
 
   color: #adadad;
 
@@ -87,6 +87,7 @@
 
 
 .navigation-modal__close {
+  margin: 1em 0;
   padding: 0;
 
   font-size: inherit;
