@@ -135,6 +135,8 @@
   border: none;
   cursor: pointer;
 
+  transition: 0.15s linear;
+
   &:hover {
     color: lighten($main-color, 45%);
   }
@@ -163,4 +165,8 @@
 
 .site-navigation__link--current {
   color: white;
+}
+
+.site-navigation__link {
+  transition: 0.15s linear;
 }
