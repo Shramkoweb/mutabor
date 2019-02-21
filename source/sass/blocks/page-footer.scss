@@ -12,6 +12,10 @@
 
 .page-footer__copyright {
   text-transform: uppercase;
+
+  @media (max-width: 425px) {
+    text-align: left;
+  }
 }
 
 .page-footer__inner {
