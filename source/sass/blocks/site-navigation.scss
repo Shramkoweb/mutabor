@@ -16,7 +16,7 @@
 
 .site-navigation__list {
   position: relative;
-
+  
   &::after {
     content: "";
     position: absolute;
@@ -79,7 +79,6 @@
 .site-navigation__facilities-list {
   @include list-reset;
   position: relative;
-  top: 175px;
 
   text-align: center;
 
