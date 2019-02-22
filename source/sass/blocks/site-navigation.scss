@@ -47,7 +47,10 @@
 
   @media (min-width: $bp-1280) {
     &::after {
+      bottom: -16px;
       left: -215px;
+
+      height: 6px;
     }
   }
 
@@ -66,6 +69,8 @@
   @media (min-width: $bp-1920) {
     &::after {
       left: -322px;
+
+      height: 8px;
     }
   }
 }
@@ -124,6 +129,10 @@
   @media (min-width: $bp-tablet) {
     padding-top: 10px;
     padding-bottom: 0;
+  }
+
+  @media (min-width: $bp-1280) {
+    padding-top: 22px;
   }
 }
 
