@@ -8,6 +8,14 @@
   @media (min-width: $bp-tablet) {
     padding-bottom: 10px;
   }
+
+  @media (min-width: $bp-1280) {
+    border-top: 6px solid #cacaca;
+  }
+
+  @media (min-width: $bp-1920) {
+    border-top: 8px solid #cacaca;
+  }
 }
 
 .page-footer__copyright {
