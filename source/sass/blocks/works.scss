@@ -5,7 +5,23 @@
   padding-top: 80px;
 
   @media (min-width: $bp-tablet) {
-    padding-top: 0;
+    padding-top: 80px;
+  }
+
+  @media (min-width: $bp-1280) {
+    padding-top: 120px;
+  }
+
+  @media (min-width: $bp-1366) {
+    padding-top: 120px;
+  }
+
+  @media (min-width: $bp-1440) {
+    padding-top: 135px;
+  }
+
+  @media (min-width: $bp-1920) {
+    padding-top: 170px;
   }
 }
 
