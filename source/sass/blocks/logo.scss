@@ -8,6 +8,18 @@
     right: 0;
   }
 
+  @media (min-width: $bp-1366) {
+    top: 8px;
+  }
+
+  @media (min-width: $bp-1440) {
+    top: 12px;
+  }
+
+  @media (min-width: $bp-1920) {
+    top: 18px;
+  }
+
   &--footer {
     position: initial;
     top: initial;
@@ -27,6 +39,7 @@
   height: 37px;
 
   opacity: 0.6;
+
   transition: 0.15s linear;
 
   &:hover {
