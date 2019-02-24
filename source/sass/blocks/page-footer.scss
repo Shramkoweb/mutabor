@@ -24,6 +24,11 @@
   @media (max-width: 425px) {
     text-align: left;
   }
+
+  @media (min-width: $bp-tablet) {
+    margin: 0;
+    margin-bottom: auto;
+  }
 }
 
 .page-footer__inner {
