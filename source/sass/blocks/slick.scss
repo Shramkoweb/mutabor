@@ -40,7 +40,8 @@
   top: 0;
   left: 0;
 
-  display: block;
+  display: flex;
+  align-items: center;
   margin-right: auto;
   margin-left: auto;
 
@@ -124,9 +125,10 @@
 
 
 .slick-slide.slick-active {
-  opacity:1;
+  opacity: 1;
+
   transition-delay: 0.3s;
+  transition-timing-function: ease-in;
   transition-duration: 0.2s;
   transition-property: opacity;
-  transition-timing-function: ease-in;
-  }
+}
