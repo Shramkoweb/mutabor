@@ -1,4 +1,5 @@
 .page-footer {
+  min-height: 60px;
   padding-top: 5px;
 
   text-align: center;
@@ -6,14 +7,19 @@
   border-top: 3px solid #cacaca;
 
   @media (min-width: $bp-tablet) {
+    min-height: 50px;
     padding-bottom: 10px;
   }
 
   @media (min-width: $bp-1280) {
+    min-height: 80px;
+
     border-top: 6px solid #cacaca;
   }
 
   @media (min-width: $bp-1920) {
+    min-height: 120px;
+
     border-top: 8px solid #cacaca;
   }
 }
@@ -29,13 +35,15 @@
     margin: 0;
     margin-bottom: auto;
   }
+
+  @media (min-width: $bp-1366) {
+    margin-top: 10px;
+  }
 }
 
 .page-footer__inner {
   @media (min-width: $bp-tablet) {
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
     align-items: center;
   }
 }

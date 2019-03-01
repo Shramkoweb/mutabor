@@ -1,39 +1,51 @@
 .project {
   min-height: 100vh;
-  padding-top: 80px;
+  padding-top: 70px;
 
   @media screen and (min-width: $bp-tablet) {
-    padding-top: 95px;
+    padding-top: 53px;
   }
 
   @media screen and (min-width: $bp-1280) {
-    padding-top: 125px;
+    padding-top: 90px;
   }
 
   @media screen and (min-width: $bp-1366) {
-    padding-top: 130px;
+    padding-top: 97px;
   }
 
   @media screen and (min-width: $bp-1440) {
-    padding-top: 185px;
+    padding-top: 103px;
   }
 
   @media screen and (min-width: $bp-1920) {
-    padding-top: 250px;
+    padding-top: 132px;
   }
 }
 
 .project__header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 10px;
+  margin-bottom: 18px;
+
+  @media screen and (min-width: $bp-tablet) {
+    margin-bottom: 21px;
+  }
 
   @media screen and (min-width: $bp-1280) {
-    margin-bottom: 15px;
+    margin-bottom: 24px;
+  }
+
+  @media screen and (min-width: $bp-1366) {
+    margin-bottom: 33px;
+  }
+
+  @media screen and (min-width: $bp-1440) {
+    margin-bottom: 42px;
   }
 
   @media screen and (min-width: $bp-1920) {
-    margin-bottom: 20px;
+    margin-bottom: 60px;
   }
 }
 
@@ -55,13 +67,14 @@
 
 .project__info {
   margin: 0;
-  text-transform: initial;
 
   line-height: normal;
+  text-transform: initial;
   letter-spacing: 0.9px;
 }
 
 .project__img {
-  opacity: 0;
   margin: 0 auto;
+
+  opacity: 0;
 }
