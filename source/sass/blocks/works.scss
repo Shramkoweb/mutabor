@@ -179,23 +179,20 @@
     outline: 0;
 
     @media (min-width: $bp-tablet) {
-      max-height: 250px;
+      max-height: 294px;
     }
 
     @media (min-width: $bp-1280) {
-      max-height: 415px;
-    }
+      max-height: 425px;
 
-    @media (min-width: $bp-1366) {
-      max-height: 445px;
     }
 
     @media (min-width: $bp-1440) {
-      max-height: 470px;
+      max-height: 538px;
     }
 
     @media (min-width: $bp-1920) {
-      max-height: 620px;
+      max-height: 718px;
     }
   }
 

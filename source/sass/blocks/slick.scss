@@ -3,6 +3,7 @@
 
   display: block;
   box-sizing: border-box;
+  margin-bottom: 15px;
 
          user-select: none;
 
@@ -11,6 +12,22 @@
   -ms-touch-action: pan-y;
       touch-action: pan-y;
   -webkit-touch-callout: none;
+
+  @media (min-width: $bp-tablet) {
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: $bp-1280) {
+    margin-bottom: 15px;
+  }
+
+  @media (min-width: $bp-1366) {
+    margin-bottom: 22px;
+  }
+
+  @media (min-width: $bp-1440) {
+    margin-bottom: 15px;
+  }
 }
 
 .slick-list {
@@ -81,17 +98,8 @@
 
   img {
     display: block;
-    margin-bottom: 10px;
 
     opacity: 1;
-
-    @media screen and (min-width: $bp-1280) {
-      padding-bottom: 20px;
-    }
-
-    @media screen and (min-width: $bp-1440) {
-      padding-bottom: 25px;
-    }
   }
 
   &.slick-loading img {
