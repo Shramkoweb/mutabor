@@ -9,7 +9,21 @@
   border-bottom: 3px solid #cacaca;
 
   @media (min-width: $bp-tablet) {
+    min-height: 49px;
+
     border: none;
+  }
+
+  @media (min-width: $bp-1280) {
+    min-height: 82px;
+  }
+
+  @media (min-width: $bp-1440) {
+    min-height: 92px;
+  }
+
+  @media (min-width: $bp-1920) {
+    min-height: 124px;
   }
 }
 
