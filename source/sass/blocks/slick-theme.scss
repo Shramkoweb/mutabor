@@ -1,6 +1,6 @@
 $slick-arrow-color: white !default;
-$slick-prev-character: "\2329" !default;
-$slick-next-character: "\232A" !default;
+$slick-prev-character: url("../img/prev.svg") !default;
+$slick-next-character: url("../img/next.svg") !default;
 $slick-opacity-default: 0.75 !default;
 $slick-opacity-on-hover: 1 !default;
 $slick-opacity-not-active: 0.25 !default;
@@ -41,15 +41,9 @@ $slick-opacity-not-active: 0.25 !default;
   }
 
   &::before {
-    font-weight: bold;
-    font-size: 40px;
-    line-height: 1;
     color: $slick-arrow-color;
 
     opacity: $slick-opacity-default;
-
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
   }
 
   @media screen and (min-width: $bp-tablet) {
@@ -66,8 +60,11 @@ $slick-opacity-not-active: 0.25 !default;
   }
 
   &::before {
-    content: $slick-prev-character;
+    content: url("../img/prev-s.svg");
 
+    @media screen and (min-width: $bp-1280) {
+      content: $slick-prev-character
+    }
     [dir="rtl"] & {
       content: $slick-next-character;
     }
@@ -83,7 +80,11 @@ $slick-opacity-not-active: 0.25 !default;
   }
 
   &::before {
-    content: $slick-next-character;
+    content: url("../img/next-s.svg");
+
+    @media screen and (min-width: $bp-1280) {
+      content: $slick-next-character
+    }
 
     [dir="rtl"] & {
       content: $slick-prev-character;
