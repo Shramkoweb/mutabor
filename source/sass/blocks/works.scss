@@ -187,6 +187,11 @@
 
     }
 
+    @media (min-width: $bp-1366) {
+      max-height: 500px;
+
+    }
+
     @media (min-width: $bp-1440) {
       max-height: 538px;
     }
